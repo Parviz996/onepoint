@@ -77,10 +77,9 @@ header .social ul li:hover a {
 }
 form {
   border: 1px solid black;
-
   width: 360px;
   padding: 90px;
-  background: #fff !important;
+  background-color: #fff !important;
   border-radius: 10px;
 }
 .btn {
@@ -117,7 +116,6 @@ ul li {
 li .submenu {
   position: absolute;
   top: 100%;
-  left: 0;
   width: 120px;
   background-color: gray;
   display: flex;
@@ -126,10 +124,129 @@ li .submenu {
   visibility: hidden;
   transition: 0.2s linear;
   border-radius: 10px;
+  z-index: 5;
 }
 
 .first:hover .submenu {
   opacity: 1;
   visibility: visible;
   transition: 0.2s;
+}
+
+.advantages {
+  width: 100%;
+  height: 450px;
+}
+.advantages h2 {
+  text-align: center;
+  padding: 25px;
+}
+.icon-area {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  transform: rotate(45deg);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(250, 200, 25, 0.3),
+    transparent
+  );
+  margin: auto;
+  justify-content: center;
+}
+.cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card {
+  text-align: center;
+  justify-content: center;
+  padding: 30px;
+  line-height: 30px;
+}
+
+.advantages hr {
+  margin: auto;
+}
+#how {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  background-color: grey;
+}
+#how img {
+  width: 100%;
+  height: 100%;
+  border: 3px solid white;
+}
+.how-left {
+  width: 350px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 45px;
+  color: white;
+}
+.how-right {
+  position: relative;
+  width: 470px;
+  height: 250px;
+}
+h2 {
+  font-size: 30px;
+}
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#partners {
+  display: flex;
+  position: relative;
+  padding: 75px;
+}
+
+.partners-left {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 20px;
+  padding: 0;
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  flex: none;
+  line-height: 35px;
+}
+.partners-left h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+#partners img {
+  width: 200px;
+  height: 100px;
+}
+.image {
+  margin: auto;
+  padding: 10px;
+}
+.image-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.image-top li {
+  margin-left: 50px;
+}
+.image-bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
